@@ -5,16 +5,41 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">{{ __('Dashboard') }}</div>
+                <div class="card-header">Mis cursos</div>
 
                 <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
+                    <div class="card-deck">
+                      <div class="card">
+                        <img src="img/c1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                         </div>
-                    @endif
-
-                    {{ __('You are logged in!') }}
+                        <div class="card-footer">
+                          <small class="text-muted">Last updated 3 mins ago</small>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <img src="img/c2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                        </div>
+                        <div class="card-footer">
+                          <small class="text-muted">Last updated 3 mins ago</small>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <img src="img/c3.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                        </div>
+                        <div class="card-footer">
+                          <small class="text-muted">Last updated 3 mins ago</small>
+                        </div>
+                      </div>
+                    </div>
                 </div>
             </div>
         </div>

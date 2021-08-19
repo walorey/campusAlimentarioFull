@@ -20,3 +20,8 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+/*probando vista admin*/
+Route::get('/admin/home' , function(){
+        return view('admin.home');
+    })->name('admin.home');
