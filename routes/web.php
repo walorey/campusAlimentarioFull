@@ -25,3 +25,13 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/admin/home' , function(){
         return view('admin.home');
     })->name('admin.home');
+
+/*autentificacion*/
+
+Route::group(['middleware'=>['auth']], function(){
+
+    Route::group(['prefix' => '/admin'], function(){
+
+        Route::resource('users', 'UserController');
+    });
+});
