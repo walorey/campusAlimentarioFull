@@ -3,7 +3,7 @@
 @section('title', 'Home')
 
 @section('content_header')
-    <h1>Usuarios</h1>
+    <h1>Cursos</h1>
 @stop
 
 @section('content')
@@ -13,4 +13,3 @@
 @section('css')
     <link rel="stylesheet" href="/css/admin_custom.css">
 @stop
-

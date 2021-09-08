@@ -13,7 +13,7 @@ class UserController extends Controller
      */
     public function index()
     {
-        return view('admin.users');
+        return view('admin.users.home');
     }
 
     /**
@@ -23,7 +23,7 @@ class UserController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.users.new-user');
     }
 
     /**

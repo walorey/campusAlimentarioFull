@@ -33,5 +33,7 @@ Route::group(['middleware'=>['auth']], function(){
     Route::group(['prefix' => '/admin'], function(){
 
         Route::resource('users', 'UserController');
+
+        Route::resource('courses', 'CourseController');
     });
 });

@@ -256,12 +256,12 @@ return [
         ['header' => 'Administrar'],
         [
             'text' => 'Usuarios',
-            'url' => '#',
+            'url' => 'admin/users',
             'icon' => 'fas fa-users',
         ],
         [
             'text' => 'Cursos',
-            'url' => '#',
+            'url' => 'admin/courses',
             'icon' => 'fas fa-chalkboard-teacher',
         ],
         ['header' => 'account_settings'],
