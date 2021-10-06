@@ -13,6 +13,7 @@
               <!-- /.card-header -->
               <!-- form start -->
               <form action="{{route('users.store')}}" method="POST">
+                @csrf
                 <div class="card-body">
                   <div class="form-group">
                     <label>Nombres</label>

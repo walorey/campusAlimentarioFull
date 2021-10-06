@@ -25,7 +25,22 @@ class UserRequest extends FormRequest
     {
         return [
             'name' => 'required',
-            
+            'lastname' => 'required',
+            'documento' => 'numeric',
+            'email' => 'required|unique:users,email',
+            'password' => 'required|confirmed'
+        ];
+    }
+
+    public function messages()
+    {
+        return [
+            'name.required' => 'Debe ingresar un nombre',
+            'lastname.required' => 'Debe ingresar un apellido',
+            'email.required' => 'Debe ingresar un email',
+            'email.unique' => 'El email ingresado ya esta en uso',
+            'password.required' => 'Debe ingresar una contraseña',
+            'password.confirmed' => 'Las contraseñas no coinciden'
         ];
     }
 }
