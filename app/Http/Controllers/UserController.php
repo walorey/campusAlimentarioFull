@@ -35,8 +35,9 @@ class UserController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function store(UserRequest $request)
-    {
-        
+    {   
+        $user = New User($request->all());
+        dd($request);
     }
 
     /**
