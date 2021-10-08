@@ -18,6 +18,12 @@ class RoleSeeder extends Seeder
         $role3 = Role::create(['name' => 'Alumno']);
 
         //por conveniencia le damos el mismo nombre a los permisos que a las rutas
-        Permission::create(['name' => 'admin.user.create']);
+        Permission::create(['name' => 'admin.user.index'])->syncRoles([$role1, $role2]);
+        Permission::create(['name' => 'admin.user.create'])->syncRoles([$role1, $role2]);
+        Permission::create(['name' => 'admin.user.store'])->syncRoles([$role1, $role2]);
+        Permission::create(['name' => 'admin.user.show'])->syncRoles([$role1, $role2]);
+        Permission::create(['name' => 'admin.user.edit'])->syncRoles([$role1, $role2]);
+        Permission::create(['name' => 'admin.user.update'])->syncRoles([$role1, $role2]);
+        Permission::create(['name' => 'admin.user.destroy'])->syncRoles([$role1, $role2]);
     }
 }
